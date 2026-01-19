@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c89b39bd-9c4b-4018-a573-ba64c36eaea5" name="Changes" comment="" />
+    <list default="true" id="ab762e59-f664-41d1-9ce8-b9807e8353b8" name="Changes" comment="1">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/proxy.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/admin/dashboard/dashboard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/admin/dashboard/dashboard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/admin-login/admin-login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/admin-login/admin-login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/admin-signup/admin-signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/admin-signup/admin-signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/client-login/client-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/client-login/client-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/client-login/client-login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/client-login/client-login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/client-signup/client-signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/client-signup/client-signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/auth/client-signup/client-signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/auth/client-signup/client-signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/admin/admin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/admin/admin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/auth/admin-auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/auth/admin-auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/auth/client-auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/auth/client-auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/header/header.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/header/header.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,32 +32,77 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fadielhuichet&quot;
+  }
 }</component>
-  <component name="ProjectId" id="36qhfviJZrOv3qKLGSbPHI9unJg" />
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/fadielhuichet/GetTicketFront&quot;,
+    &quot;accountId&quot;: &quot;948c8218-440b-4b74-baaf-34da927cdb8f&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="36qoASG8u1zel7C0sFfWL2vMasz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/WSI/Documents/3LM/DevWeb (Spring Boot)/Projects/GetTicketFront",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.Angular CLI Server.executor": "Run",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;augment.onboarding.workspace.summary.shown.d1bd3ea06f80f6043b16581d27bd4c25d0ab812bdba7c320f65f641f7c74fb6b&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/WSI/GetTicketFront&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Angular CLI Server.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\WSI\\GetTicketFront\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\WSI\GetTicketFront\src\app\client" />
+      <recent name="C:\Users\WSI\GetTicketFront\src\app\services\client" />
+      <recent name="C:\Users\WSI\GetTicketFront\src\app\services\auth" />
+      <recent name="C:\Users\WSI\GetTicketFront\src\app\services\admin" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
   </component>
@@ -51,18 +115,62 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c89b39bd-9c4b-4018-a573-ba64c36eaea5" name="Changes" comment="" />
-      <created>1765740117858</created>
+      <changelist id="ab762e59-f664-41d1-9ce8-b9807e8353b8" name="Changes" comment="" />
+      <created>1765743319299</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1765740117858</updated>
-      <workItem from="1765740119113" duration="915000" />
-      <workItem from="1765742405327" duration="904000" />
+      <updated>1765743319299</updated>
+      <workItem from="1765743320911" duration="9063000" />
+      <workItem from="1765911120055" duration="21399000" />
+      <workItem from="1765973815123" duration="54331000" />
+      <workItem from="1766110081046" duration="2314000" />
+      <workItem from="1766117221614" duration="17068000" />
+      <workItem from="1766173884809" duration="1579000" />
+      <workItem from="1766219149712" duration="1089000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1766115480135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1766115480135</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <option name="closed" value="true" />
+      <created>1766115838144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766115838144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="ai.zencoder.plugin.mcp">
+    <option name="internalToolsState" value="{&quot;file_search&quot;:true,&quot;list_resources&quot;:true,&quot;fulltext_search&quot;:true,&quot;read_resource&quot;:true}" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

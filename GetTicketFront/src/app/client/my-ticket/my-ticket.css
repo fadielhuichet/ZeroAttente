@@ -1,0 +1,48 @@
+.my-ticket-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.ticket-card {
+  background: #f5f8fa;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  margin-bottom: 16px;
+}
+
+.ticket-card h2 {
+  margin-top: 0;
+  color: #2a5d9f;
+  font-size: 1.5em;
+}
+
+.ticket-card p {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+.no-ticket {
+  color: #888;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.1em;
+}
+
+[ng-reflect-ng-if="loading"] {
+  color: #2a5d9f;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+[ng-reflect-ng-if="error"] {
+  color: #c00;
+  text-align: center;
+  font-size: 1.1em;
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Admin Sign Up - GetTicket')}"></head>
+<body class="min-h-screen bg-gray-100 flex flex-col">
+    <nav th:replace="~{fragments/layout :: navbar}"></nav>
+    
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-lg w-full space-y-8">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    Create Admin Account
+                </h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    Register your organization
+                </p>
+            </div>
+            
+            <div th:if="${error}" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                <span th:text="${error}">Error</span>
+            </div>
+            
+            <form class="mt-8 space-y-6" action="/signup/admin" method="POST" th:object="${adminSignUpRequest}">
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input id="email" name="email" type="email" required th:field="*{email}"
+                                   class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                                   placeholder="admin@example.com">
+                        </div>
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <input id="password" name="password" type="password" required th:field="*{password}"
+                                   class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                                   placeholder="Password">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="organizationName" class="block text-sm font-medium text-gray-700">Organization Name</label>
+                        <input id="organizationName" name="organizationName" type="text" required th:field="*{organizationName}"
+                               class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                               placeholder="Your Organization Name">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="organizationLocation" class="block text-sm font-medium text-gray-700">Location</label>
+                            <input id="organizationLocation" name="organizationLocation" type="text" required th:field="*{organizationLocation}"
+                                   class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                                   placeholder="City, Country">
+                        </div>
+                        <div>
+                            <label for="organizationCode" class="block text-sm font-medium text-gray-700">Organization Code</label>
+                            <input id="organizationCode" name="organizationCode" type="text" required th:field="*{organizationCode}"
+                                   class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                                   placeholder="ORG-001">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone (Optional)</label>
+                        <input id="phone" name="phone" type="tel" th:field="*{phone}"
+                               class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                               placeholder="+1 234 567 890">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" 
+                            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200">
+                        Create Admin Account
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        Already have an account? 
+                        <a href="/login" class="font-medium text-indigo-600 hover:text-indigo-500">Sign in</a>
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Want to sign up as a client? 
+                        <a href="/signup/client" class="font-medium text-indigo-600 hover:text-indigo-500">Client Sign Up</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

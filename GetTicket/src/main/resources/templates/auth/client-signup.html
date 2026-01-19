@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Client Sign Up - GetTicket')}"></head>
+<body class="min-h-screen bg-gray-100 flex flex-col">
+    <nav th:replace="~{fragments/layout :: navbar}"></nav>
+    
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    Create Client Account
+                </h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    Sign up to request tickets
+                </p>
+            </div>
+            
+            <div th:if="${error}" class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                <span th:text="${error}">Error</span>
+            </div>
+            
+            <form class="mt-8 space-y-6" action="/signup/client" method="POST" th:object="${clientSignupRequest}">
+                <div class="space-y-4">
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                        <input id="username" name="username" type="text" required th:field="*{username}"
+                               class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                               placeholder="Choose a username">
+                    </div>
+                    
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input id="password" name="password" type="password" required th:field="*{password}"
+                               class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                               placeholder="Create a password">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="prenom" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input id="prenom" name="prenom" type="text" th:field="*{prenom}"
+                                   class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                                   placeholder="John">
+                        </div>
+                        <div>
+                            <label for="nom" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input id="nom" name="nom" type="text" th:field="*{nom}"
+                                   class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                                   placeholder="Doe">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" 
+                            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200">
+                        Create Account
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        Already have an account? 
+                        <a href="/login" class="font-medium text-indigo-600 hover:text-indigo-500">Sign in</a>
+                    </p>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Want to register an organization? 
+                        <a href="/signup/admin" class="font-medium text-indigo-600 hover:text-indigo-500">Admin Sign Up</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
